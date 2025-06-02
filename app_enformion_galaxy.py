@@ -4,8 +4,8 @@ import pandas as pd
 import requests
 
 # Enformion Galaxy API credentials (REPLACE THESE)
-GALAXY_PROFILE_NAME = "your-profile-name"
-GALAXY_PROFILE_PASSWORD = "your-profile-password"
+GALAXY_PROFILE_NAME = "7dd6a024318044ab9f88c0dc405d52de"
+GALAXY_PROFILE_PASSWORD = "57b5a73a0bfb4e74877d3e5c3b8f40ec"
 GALAXY_CLIENT_TYPE = "Python"
 GALAXY_SEARCH_TYPE = "PropertyV2"
 ENFORMION_URL = "https://devapi.enformion.com/PropertyV2Search"
