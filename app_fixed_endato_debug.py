@@ -3,9 +3,10 @@ import streamlit as st
 import pandas as pd
 import requests
 
-# Endato API key
-ENDATO_API_KEY = "7dd6a024318044ab9f88c0dc405d52de"
-ENDATO_URL = "https://api.endato.com/v2/identity/address"
+# ENFORMION API key
+ENFORMION_API_KEY = "7dd6a024318044ab9f88c0dc405d52de"
+ENFORMION_URL = "https://api.enformion.com/v2/people/search"  # or similar
+
 
 # Lookup phone number using Endato
 def lookup_phone_endato(address):
@@ -19,7 +20,7 @@ def lookup_phone_endato(address):
             "x-api-key": ENDATO_API_KEY,
             "Content-Type": "application/json"
         }
-        response = requests.post(ENDATO_URL, json=payload, headers=headers)
+        response = requests.post(ENFORMION_URL, json=payload, headers=headers)
         if response.status_code != 200:
             return f"HTTP {response.status_code}: {response.text.strip()}"
         try:
